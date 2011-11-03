@@ -23,3 +23,4 @@ simplify(x, ...)
 r <- rationalfun(c(1, 1), c(1, 2, 1))
 simplify(r)
 }
+\keyword{symbolmath}

@@ -23,3 +23,4 @@ as.character(r)
 \seealso{
   \code{\link[polynom]{as.character.polynomial}}
 }
+\keyword{symbolmath}

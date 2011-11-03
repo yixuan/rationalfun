@@ -22,3 +22,4 @@ print(r)
 \seealso{
   \code{\link[polynom]{print.polynomial}}
 }
+\keyword{symbolmath}

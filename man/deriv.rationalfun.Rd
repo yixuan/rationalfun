@@ -27,3 +27,4 @@ deriv(r)
   \code{\link[polynom]{deriv.polynomial}},
   \code{\link[stats]{deriv}}
 }
+\keyword{symbolmath}

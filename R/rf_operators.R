@@ -7,6 +7,7 @@
 ##' @param \dots currently not used in this function
 ##' @return A new object of class "rationalfun"representing the simplified
 ##' rational function.
+##' @keywords symbolmath
 ##' @examples # (x + 1) / (x^2 + 2 * x + 1) ==> 1 / (x + 1)
 ##' r <- rationalfun(c(1, 1), c(1, 2, 1))
 ##' simplify(r)
@@ -91,6 +92,7 @@ simplify <- function(x, ...)
 ##' an object of class "rationalfun"
 ##' @return A new object of "rationalfun" class.
 ##' @export
+##' @keywords symbolmath
 ##' @examples r1 <- rationalfun(c(1, 2), c(1, 2, 1))
 ##' r2 <- rationalfun(c(1, 1), c(1, -2, 1))
 ##' r1 + r2

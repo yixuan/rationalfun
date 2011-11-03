@@ -11,6 +11,7 @@
 ##' the derivative of the original rational function.
 ##' @seealso \code{\link[polynom]{deriv.polynomial}},
 ##' \code{\link[stats]{deriv}}
+##' @keywords symbolmath
 ##' @examples # (x + 1) / (x^2 + x + 1)
 ##' r <- rationalfun(c(1, 1), c(1, 1, 1))
 ##' deriv(r)
@@ -129,6 +130,7 @@ integraterf.transcendent <- function(x, ...)
 ##' How to Integrate Rational Functions,
 ##' \emph{The American Mathematical Monthly},
 ##' Vol. 99, No.8 (1992), 762-772.
+##' @keywords symbolmath
 ##' @examples # (x + 1) / (x^2 + x + 1)
 ##' r <- rationalfun(c(1, 1), c(1, 1, 1))
 ##' expr <- integral(r)
@@ -194,6 +196,7 @@ integral.rationalfun <- function(expr, ...)
 ##' @return A function with one argument which could be a real
 ##' or complex vector.
 ##' @seealso \code{\link[polynom]{integral.polynomial}}
+##' @keywords symbolmath
 ##' @examples x <- rationalfun(c(-6, -1, -8, 15, -1, 8, -9, 2),
 ##'                            c(8, 12, 16, 4, 4))
 ##' int <- integral(x)

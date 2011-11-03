@@ -46,3 +46,4 @@ f(2)
 \seealso{
   \code{\link[polynom]{integral.polynomial}}
 }
+\keyword{symbolmath}

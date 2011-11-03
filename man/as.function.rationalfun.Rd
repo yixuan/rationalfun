@@ -23,8 +23,9 @@ r
 f <- as.function(r)
 f
 f(1:10)
-f(1:10 + (0 + (0+2i)))
+f(1:10 + (0+2i))
 }
 \seealso{
   \code{\link[polynom]{as.function.polynomial}}
 }
+\keyword{symbolmath}

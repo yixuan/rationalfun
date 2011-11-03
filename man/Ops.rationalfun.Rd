@@ -23,3 +23,4 @@ r1 + r2
 r1 * r2
 r1^2
 }
+\keyword{symbolmath}

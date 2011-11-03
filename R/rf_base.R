@@ -104,6 +104,7 @@ rfun.poly <- rationalfun.poly;
 ##' or complex vector.
 ##' @export
 ##' @seealso \code{\link[polynom]{as.function.polynomial}}
+##' @keywords symbolmath
 ##' @examples r <- rationalfun(c(1, 1), c(3, 2, 1))
 ##' r
 ##' f <- as.function(r)
@@ -142,6 +143,7 @@ as.function.rationalfun <- function(x, ...)
 ##' @return A character string representing the rational function.
 ##' @export
 ##' @seealso \code{\link[polynom]{as.character.polynomial}}
+##' @keywords symbolmath
 ##' @examples r <- rationalfun(c(1, 1), c(3, 2, 1))
 ##' as.character(r)
 as.character.rationalfun <- function(x, ...)
@@ -164,6 +166,7 @@ as.character.rationalfun <- function(x, ...)
 ##' @return A vector of evaluated results.
 ##' @export
 ##' @seealso \code{\link[polynom]{predict.polynomial}}
+##' @keywords symbolmath
 ##' @examples r <- rationalfun(c(1, 1), c(3, 2, 1))
 ##' predict(r, 1:10)
 predict.rationalfun <- function(object, newdata, ...)
@@ -183,6 +186,7 @@ predict.rationalfun <- function(object, newdata, ...)
 ##' @return Invisible, the object itself.
 ##' @export
 ##' @seealso \code{\link[polynom]{print.polynomial}}
+##' @keywords symbolmath
 ##' @examples r <- rationalfun(c(1, 1), c(3, 2, 1))
 ##' print(r)
 print.rationalfun <- function(x, ...)

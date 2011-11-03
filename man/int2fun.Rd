@@ -28,3 +28,4 @@ fun(c(0, 1))
 \seealso{
   \code{\link[polynom]{integral.polynomial}}
 }
+\keyword{symbolmath}

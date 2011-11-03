@@ -26,3 +26,4 @@ predict(r, 1:10)
 \seealso{
   \code{\link[polynom]{predict.polynomial}}
 }
+\keyword{symbolmath}
