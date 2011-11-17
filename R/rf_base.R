@@ -115,20 +115,12 @@ as.function.rationalfun <- function(x, ...)
 {
     numer.expr <- .poly2expr(x$numerator, "numer");
     denom.expr <- .poly2expr(x$denominator, "denom");
-    ex <- call("{");
-    len <- 1;
-    for(i in 2:length(numer.expr))
-    {
-        ex[[i + len - 1]] <- numer.expr[[i]];
-    }
-    len <- length(ex);
-    for(i in 2:length(denom.expr))
-    {
-        ex[[i + len - 1]] <- denom.expr[[i]];
-    }
-    ex[[length(ex) + 1]] <- call("/", as.name("numer"), as.name("denom"));
+    ex <- c(numer.expr, denom.expr,
+			call("/", as.name("numer"), as.name("denom")));
+	ca <- call("{");
+	for(i in seq_along(ex)) ca[[i + 1]] <- ex[[i]];
     f <- function(x) NULL;
-    body(f) <- ex;
+    body(f) <- ca;
     return(f);
 }
 
