@@ -4,11 +4,11 @@
     a <- rev(coef(x));
     w <- as.name(var.name);
     v <- as.name("x");
-    ex <- call("{", call("<-", w, 0));
+	ex <- expression();
+	ex[[1]] <- call("<-", w, 0);
     for(i in seq_along(a))
     {
-        ex[[i + 2]] <- call("<-", w, call("+", a[1], call("*", v, w)));
-        a <- a[-1];
+        ex[[i + 1]] <- call("<-", w, call("+", a[i], call("*", v, w)));
     }
     return(ex);
 }
@@ -16,7 +16,8 @@
 .is_zero_polynomial <- function(x)
 {
     cf <- coef(x);
-	return(cf %*% cf < 1e-16);
+	#return(cf %*% cf < 1e-16);
+	return(all(abs(cf) < sqrt(.Machine$double.eps)));
 }
 
 .degree <- function(x) length(unclass(x)) - 1;
