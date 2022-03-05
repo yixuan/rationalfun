@@ -2,10 +2,8 @@ Package: rationalfun
 Version: 0.1-1
 Date: 2022-03-05
 Title: Manipulation of Rational Functions
-Description: This package provides several functions to
-    manipulate rational functions, including basic
-    arithmetic operators, derivatives, and integrals with
-    EXPLICIT forms.
+Description: Functions to manipulate rational functions, including basic
+    arithmetic operators, derivatives, and integrals with EXPLICIT forms.
 Author: Yixuan Qiu <yixuan.qiu@cos.name>
 Maintainer: Yixuan Qiu <yixuan.qiu@cos.name>
 Depends:
